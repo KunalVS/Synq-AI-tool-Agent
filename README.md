@@ -4,7 +4,9 @@ An intelligent AI tool-calling assistant that turns natural-language requests in
 
 ## Demo
 
-![Synq Streamlit interface](assets/synq-demo.png)
+[![Synq Streamlit interface](assets/synq-demo.png)](assets/synq-demo.mp4)
+
+[Watch the Synq demo video](assets/synq-demo.mp4)
 
 ## Overview
 
