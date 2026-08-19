@@ -14,7 +14,7 @@ load_dotenv()
 
 st.set_page_config(
     page_title="Synq",
-    page_icon="N",
+    page_icon="S",
     layout="wide",
     initial_sidebar_state="expanded",
 )
@@ -39,14 +39,36 @@ st.html(
         --synq-error: #EF4444;
     }
 
+    html,
+    body,
+    .stApp,
+    [data-testid="stAppViewContainer"],
+    [data-testid="stAppViewContainer"] .main,
+    [data-testid="stAppViewContainer"] .main > div,
+    [data-testid="stMain"],
+    [data-testid="stBottom"] {
+        background: var(--synq-bg) !important;
+        color: var(--synq-text) !important;
+    }
+
+    [data-testid="stAppScrollToBottomContainer"] {
+        scroll-behavior: smooth;
+    }
+
     .stApp {
-        background: var(--synq-bg);
-        color: var(--synq-text);
         font-family: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
     }
 
     [data-testid="stHeader"] { background: transparent; }
     [data-testid="stDecoration"] { display: none; }
+
+    [data-testid="stBottom"] {
+        border-top: 1px solid var(--synq-border) !important;
+    }
+
+    [data-testid="stBottom"] > div {
+        background: transparent !important;
+    }
 
     .block-container {
         max-width: 1120px;
@@ -179,10 +201,15 @@ st.html(
     }
 
     [data-testid="stChatInput"] {
-        background: var(--synq-panel);
+        background: var(--synq-panel) !important;
         border: 1px solid var(--synq-border-strong);
         border-radius: 11px;
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.16);
+    }
+
+    [data-testid="stChatInput"] [data-baseweb="textarea"],
+    [data-testid="stChatInput"] textarea {
+        background: transparent !important;
     }
 
     [data-testid="stChatInput"]:focus-within {
