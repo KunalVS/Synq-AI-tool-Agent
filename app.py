@@ -89,7 +89,7 @@ st.html(
     .synq-sidebar-brand {
         color: var(--synq-text);
         font-family: 'Space Grotesk', sans-serif;
-        font-size: 1.18rem;
+        font-size: 1.55rem;
         font-weight: 700;
         letter-spacing: 0.22em;
         margin-bottom: 0.55rem;
